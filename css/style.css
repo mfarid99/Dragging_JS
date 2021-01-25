@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border: solid 3px black;
+  background: white;
+}
+
+.fill {
+  background-image: url('https://marriedbiography.com/wp-content/uploads/2017/05/Bruce_20Campbell_20head_20shot_20as_20Bruce.jpg');
+  height: 295px;
+  width: 295px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: white;
+  border-style: dashed;
+}
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
